@@ -11,12 +11,12 @@ namespace ConsoleApplication1 {
 
         private static double AvgValue(int[] arr)
         {
-            var sum = 0;
+            var sum_main = 0;
             for (int i = 0; i < arr.Length; i++)
             {
-                sum += arr[i];
+                sum_main += arr[i];
             }
-            return (double) sum / arr.Length;
+            return (double) sum_main / arr.Length;
         }
 
         private static int MaxValue(int[] arr)
