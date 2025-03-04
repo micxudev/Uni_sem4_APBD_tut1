@@ -18,5 +18,25 @@ namespace ConsoleApplication1 {
             }
             return (double) sum / arr.Length;
         }
+
+        private static int MaxValue(int[] arr)
+        {
+            if (arr.Length == 0)
+            {
+                throw new Exception("Array is empty");
+            }
+
+            int max = arr[0];
+
+            for (int i = 1; i < arr.Length; i++)
+            {
+                var current = arr[i];
+                if (current > max)
+                {
+                    max = current;
+                }
+            }
+            return max;
+        }
     }
 }
